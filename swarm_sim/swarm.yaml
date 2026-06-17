@@ -1,0 +1,51 @@
+project:
+  name: first_swarm_demo
+  root: .
+world:
+  name: multi_iris_runway
+  sdf: worlds/multi_iris_runway.sdf
+base_model:
+  source: /home/dev/ardupilot_gazebo/models/iris_with_gimbal
+uavs:
+- id: 0
+  name: iris_0
+  start_pose:
+  - 0
+  - 0
+  - 0.2
+  - 0
+  - 0
+  - 0
+  sitl_instance: 0
+  mavlink_port: 14550
+  control_tcp_port: 5762
+  fdm_port_in: 9002
+  fdm_port_out: 9003
+- id: 1
+  name: iris_1
+  start_pose:
+  - 5
+  - 0
+  - 0.2
+  - 0
+  - 0
+  - 0
+  sitl_instance: 1
+  mavlink_port: 14560
+  control_tcp_port: 5772
+  fdm_port_in: 9012
+  fdm_port_out: 9013
+- id: 2
+  name: iris_2
+  start_pose:
+  - 10
+  - 0
+  - 0.2
+  - 0
+  - 0
+  - 0
+  sitl_instance: 2
+  mavlink_port: 14570
+  control_tcp_port: 5782
+  fdm_port_in: 9022
+  fdm_port_out: 9023
